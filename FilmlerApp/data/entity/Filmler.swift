@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Filmler{
+class Filmler : Codable{
     var Id:Int?
     var resim:String?
     var ad:String?

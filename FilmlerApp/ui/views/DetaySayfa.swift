@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetaySayfa: UIViewController {
 
@@ -20,6 +21,11 @@ class DetaySayfa: UIViewController {
 
         if let f = film{
             labelAd.text = f.ad!
+            if let url = URL(string: "http://kasimadalan.pe.hu/filmler_yeni/resimler/\(f.resim!)"){
+                DispatchQueue.main.async{
+                    self.filmImage.kf.setImage(with: url)
+                }
+            }
             labelFiyat.text = "\(f.fiyat!) ₺"
             filmImage.image = UIImage(named: f.resim!)
         }

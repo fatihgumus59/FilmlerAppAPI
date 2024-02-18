@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		021F42312B8251410031A277 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 021F42302B8251410031A277 /* Alamofire */; };
 		021F42342B82514A0031A277 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 021F42332B82514A0031A277 /* Kingfisher */; };
+		021F42362B8252A00031A277 /* FilmlerCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021F42352B8252A00031A277 /* FilmlerCevap.swift */; };
 		024EAED42B47297F006FFAB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024EAED32B47297F006FFAB1 /* AppDelegate.swift */; };
 		024EAED62B47297F006FFAB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024EAED52B47297F006FFAB1 /* SceneDelegate.swift */; };
 		024EAED82B47297F006FFAB1 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024EAED72B47297F006FFAB1 /* Anasayfa.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021F42352B8252A00031A277 /* FilmlerCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerCevap.swift; sourceTree = "<group>"; };
 		024EAED02B47297F006FFAB1 /* FilmplerAppAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmplerAppAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024EAED32B47297F006FFAB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		024EAED52B47297F006FFAB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				024EAEEC2B472B0F006FFAB1 /* Filmler.swift */,
+				021F42352B8252A00031A277 /* FilmlerCevap.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				0287E1012B6AB945000D27DA /* AnasayfaViewModel.swift in Sources */,
 				024EAED62B47297F006FFAB1 /* SceneDelegate.swift in Sources */,
 				024EAEEF2B472C15006FFAB1 /* DetaySayfa.swift in Sources */,
+				021F42362B8252A00031A277 /* FilmlerCevap.swift in Sources */,
 				024EAEED2B472B0F006FFAB1 /* Filmler.swift in Sources */,
 				024EAEF12B472E13006FFAB1 /* FilmlerHucre.swift in Sources */,
 				0287E0FE2B6AB928000D27DA /* FilmlerDaoRepository.swift in Sources */,

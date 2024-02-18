@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class Anasayfa: UIViewController {
 
@@ -24,7 +25,10 @@ class Anasayfa: UIViewController {
         
         _ = viewModel.filmlerListesi.subscribe(onNext: { liste in
             self.filmlerListesi = liste
-            self.filmlerCollectionView.reloadData()//tabloyu yeniler
+            DispatchQueue.main.async{
+                self.filmlerCollectionView.reloadData()//tabloyu yeniler
+            }
+            
         })
         
         let tasarim = UICollectionViewFlowLayout()
@@ -56,7 +60,14 @@ extension Anasayfa : UICollectionViewDataSource,UICollectionViewDelegate,HucrePr
         let hucre = collectionView.dequeueReusableCell(withReuseIdentifier: "filmlerHucre", for: indexPath) as! FilmlerHucre
         
         hucre.filmFiyat.text = "\(film.fiyat!) ₺"
-        hucre.filmImage.image = UIImage(named: film.resim!)
+        
+       
+        if let url = URL(string: "http://kasimadalan.pe.hu/filmler_yeni/resimler/\(film.resim!)"){
+            DispatchQueue.main.async{
+                hucre.filmImage.kf.setImage(with: url)
+            }
+        }
+       
         
         
         hucre.layer.borderColor = UIColor.lightGray.cgColor
